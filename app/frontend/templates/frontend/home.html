@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat com LLM</title>
+</head>
+<body>
+    <h1>Chat com LLM</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="prompt" placeholder="Digite sua pergunta">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

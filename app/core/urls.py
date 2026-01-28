@@ -28,7 +28,9 @@ def health_check(request):
     return JsonResponse({"status": "ok"})
 
 
+from django.urls import include, path
+
 urlpatterns = [
-    path('admin/', admin.site.urls),  # Painel administrativo do Django
-    path('', health_check, name='health_check'),  # Endpoint raiz para health check
+    path('', include('frontend.urls')),
+    path('admin/', admin.site.urls),
 ]
