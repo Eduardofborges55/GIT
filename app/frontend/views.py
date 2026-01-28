@@ -10,4 +10,4 @@ def home(request):
 
     return render(request, "frontend/home.html", {
         "resposta": resposta
-    })
+    }) 
